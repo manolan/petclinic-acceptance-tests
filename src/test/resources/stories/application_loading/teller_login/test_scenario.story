@@ -1,8 +1,5 @@
-Scenario: test scenario
 
-Given the home page is loaded
-When find pet owner is clicked
-Then the pet owner page should be displayed
+Scenario: test scenario
 
 Given the find owner page is loaded
 When the find owners button is clicked
