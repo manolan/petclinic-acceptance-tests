@@ -2,7 +2,7 @@
 Meta:
 @smoketest
 
-Scenario: test scenario
+Scenario: smoke test scenario
 
 Given the home page is loaded
 When find pet owner is clicked

@@ -1,5 +1,5 @@
 
-Scenario: test scenario
+Scenario: acceptance test scenario
 
 Given the find owner page is loaded
 When the find owners button is clicked
