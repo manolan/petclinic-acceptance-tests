@@ -240,19 +240,18 @@
 
 			<!-- @POST-INTEGRATION-TEST: Acceptance Tests Reporting -->
 			<plugin>
-				<groupId>net.thucydides.maven.plugins</groupId>
-				<artifactId>maven-thucydides-plugin</artifactId>
-				<version>${thucydides.version}</version>
-				
-				<executions>
-					<execution>
-						<id>thucydides-reports</id>
-						<phase>post-integration-test</phase>
-						<goals>
-							<goal>aggregate</goal>
-						</goals>
-					</execution>
-				</executions>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<reportPlugins>
+						<plugin>
+							<groupId>net.thucydides.maven.plugins</groupId>
+							<artifactId>maven-thucydides-plugin</artifactId>
+							<version>${thucydides.version}</version>
+						</plugin>
+					</reportPlugins>
+				</configuration>
 			</plugin>
 		</plugins>
 		<pluginManagement>
